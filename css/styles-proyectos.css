@@ -1,0 +1,405 @@
+body{
+    background: #ffff;
+    overflow-x: hidden;/* Eliminamos errores de float*/
+    font-family: 'Montserrat', sans-serif;
+}
+/*------------------------------------*/
+/*Estilos de secciones de header      */
+/*------------------------------------*/
+.banner{
+    margin-top: 90px; 
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-size: cover; /*para que se comporte como una portada*/
+    background-position: center;
+    transition: all .1s ease-in-out;
+    animation: banner 10s infinite linear;
+}
+
+.banner-content1{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color: #ffff;
+    background-color: rgba(0, 22, 40, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-content1 h1{
+    padding-bottom: 30px;
+    font-size: 35px;
+    text-align: center;
+}
+
+.banner-content1 h2{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+    font-size: 25px;
+    color: #f2af0e;
+    text-align: center;
+}
+
+/*animación*/
+@keyframes banner{
+    0% {
+        background-image: url(../img/espe-sd3.jpg);
+        
+    }
+    100% {
+        background-image: url(../img/espe-sd3.jpg);
+    }
+}
+
+/* ESTO ES LO DEL WAVE*/
+.banner svg{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+}
+
+
+/*------------------------------------*/
+/*Estilos de secciones de proyectos*/
+/*------------------------------------*/
+#abierto-ponencia, #abierto-poster, #abierto-charla{
+    background: #1e1e1e25;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: 1px solid white;
+    border-radius: 4px;
+    transition: 0.4s; /*Crea un efecto flotante en el boton */
+    outline: none;
+ }
+ .carrera-panel{
+     padding: 5px 18px;
+     display: none;
+     overflow: hidden;
+ }
+
+ .active, #abierto-ponencia:hover,  #abierto-poster:hover,  #abierto-charla:hover{
+     background: #1e1e1e56;
+ }
+
+/*-------------------------------*/
+/*Estilos de los botones*/
+/*-------------------------------*/
+.boton-proyectos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.boton-proyectos input{
+    margin: 12px;
+    width: 240px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    background: #00713d;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.boton-proyectos .botones:hover{
+    background: #f2af0e;
+}
+
+/*-------------------------------*/
+/*Estilos de formularios*/
+/*-------------------------------*/
+
+/*Estilo de formulario de proyectos*/
+#formularios-p{
+    width: 40%;
+    background-color: white;
+    border-radius: 45px;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 40px;
+    border: 3px solid #00713d ;
+    font-family: 'Montserrat', sans-serif;
+    display: none;
+   
+}
+/*Estilo de formulario de jueces*/
+#formularios-j{
+    width: 40%;
+    background-color: white;
+    border-radius: 45px;
+    text-align: center;
+    padding: 20px;
+    line-height: 40px;
+    align-items: center;
+    margin: 0 auto;
+    border: 3px solid #00713d ;
+    font-family: 'Montserrat', sans-serif;
+    display: none;
+}
+
+/*Estilo de formulario de poster*/
+#formularios-po{
+    width: 40%;
+    background-color: white;
+    border-radius: 45px;
+    padding: 20px;
+    text-align: center;
+    line-height: 40px;
+    align-items: center;
+    margin: 0 auto;
+    border: 3px solid #00713d ;
+    font-family: 'Montserrat', sans-serif;
+    display: none;
+}
+
+/*Estilo de formulario de publico*/
+#formularios-pu{
+    width: 40%;
+    background-color: white;
+    border-radius: 45px;
+    padding: 20px;
+    line-height: 40px;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    border: 3px solid #00713d ;
+    font-family: 'Montserrat', sans-serif;
+    display: none;
+}
+
+.primer-formulario label {
+    font-size: 18px;
+    text-align: center;
+    color: #333944;
+    margin: 30px 0px 10px 0px;
+}
+
+
+.boton-proyectos .botones {
+    margin-top: 12px;
+    width: 240px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    background: #00713d;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+input[type=button]{
+    margin-top: 12px;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    background: #00713d;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+input[type=button]:hover{
+    background-color: #f2af0e;
+}
+
+
+input[type=text]{
+    width: 90%;
+    height: 40px;
+    margin:auto;
+    border-radius: 24px;
+    outline: none;
+    border:2.5px solid #00713d;
+    text-align: center;
+    font-size: 18px;
+    color: #252a34;
+    
+}
+
+
+input[type=number]{
+    width: 90%;
+    height: 40px;
+    margin:auto;
+    border-radius: 24px;
+    outline: none;
+    border:2.5px solid #00713d;
+    text-align: center;
+    font-size: 18px;
+    color: #252a34;
+    
+}
+input[type=email]{
+    width: 90%;
+    height: 40px;
+    margin:auto;
+    border-radius: 24px;
+    outline: none;
+    border:2.5px solid #00713d;
+    text-align: center;
+    font-size: 18px;
+    color: #252a34;
+    
+}
+
+input[type=submit]{
+    margin-top: 12px;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    background: #00713d;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+input[type=submit]:hover{
+    background-color: #f2af0e;
+}
+
+
+.input100 {
+    width: 70%;
+    text-align: center;
+    outline: none;
+    margin:auto;
+    font-family: Montserrat-SemiBold;
+    font-size: 18px;
+    color: #555555;
+  }
+
+textarea{
+    width: 90%;
+    height: 200px;
+    margin:auto;
+    padding: 20px;
+    border-radius: 24px;
+    outline: none;
+    border:2.5px solid #00713d;
+    font-size: 15px;
+    color: #252a34;
+    resize: none;
+}
+
+select{
+    width: 90%;
+    height: 40px;
+    margin:auto;
+    padding-left: 40%;
+    border-radius: 24px;
+    outline: none;
+    border:2.5px solid #00713d;
+    text-align: center;
+    font-size: 18px;
+    color: #252a34;
+}
+
+.primer-formulario img {
+    margin-top: 25px;
+}
+
+
+/*------------------------------------*/
+/*Estilos del calendario              */
+/*------------------------------------*/
+
+ /* Ponencia*/
+ .boxes1 {
+    margin-top: 50px;
+    margin: 50px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  }
+  
+  .ponenc {
+    background: white;
+    text-align: center;
+    padding: 1.5rem 2rem;
+    box-shadow: black;
+    border: 4px solid #15a4f7;
+    border-radius: 25px;
+    line-height: 30px ;
+  }
+  
+  .ponenc:hover{
+    background-color: hsla(209, 86%, 53%, 0.164);
+  }
+
+/* Poster*/
+  .boxes2 {
+    margin-top: 50px;
+    margin: 50px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  }
+  
+  .poster {
+    background: white;
+    text-align: center;
+    padding: 1.5rem 2rem;
+    box-shadow: black;
+    border: 4px solid #d4b503;
+    border-radius: 25px;
+    line-height: 30px ;
+  }
+
+  .poster:hover{
+    background-color: hsla(54, 74%, 79%, 0.164);
+  }
+
+/* Charla*/
+.boxes3 {
+    margin-top: 50px;
+    margin: 50px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  }
+  
+  .charla {
+    background: white;
+    text-align: center;
+    padding: 1.5rem 2rem;
+    box-shadow: black;
+    border: 4px solid #eb3333;
+    border-radius: 25px;
+    line-height: 30px ;
+  }
+  
+  .charla:hover{
+    background-color: hsla(19, 70%, 72%, 0.164);
+  }
+  

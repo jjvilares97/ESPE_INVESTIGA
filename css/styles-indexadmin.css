@@ -1,0 +1,109 @@
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background: url(../img/proyectos.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+*{
+    box-sizing: border-box;
+    
+}
+
+
+h2{
+	font-family: "Roboto", sans-serif;
+	font-size: 2em;
+	text-align: center;
+	font-style: bold;
+	color: #454b52;
+}
+h4{
+	font-family: "Roboto", sans-serif;
+	font-size: 2em;
+	text-align: center;
+	font-style: bold;
+	color: #00713d;
+}
+p{
+	font-family: "Roboto", sans-serif;
+	font-size: 1em;
+	text-align: center;
+	font-style: bold;
+	color: #454b52;
+}
+
+a{
+	font-family: "Roboto", sans-serif;
+	padding-top: 10px;
+	text-decoration: none;
+	text-align: center;
+	font-size: 1em;
+    margin: 0 auto;
+    color:  #00713ca9;
+
+}
+
+a:hover {
+	background-color:#00713ca9;
+	color: white;
+}
+
+button{
+	display: block;
+    margin: 0 auto;
+	padding: 10px 60px 10px 60px;
+	border: 0px;
+	font-size: 1em; 
+	font-family: "Roboto", sans-serif;
+}
+
+/*Estilos de la tabla*/
+#main-container{
+    margin: 0 auto;
+}
+
+table{
+    max-width: 70%;
+    border-radius: 10px;
+    margin: 0 auto;
+	background-color: white;
+	text-align: left;
+	border-collapse: collapse;
+	width: 70%;
+}
+
+th, td{
+	padding: 20px;
+}
+
+thead{
+	background-color: #00713d;
+	border-bottom: solid 5px #0F362D;
+	color: white;
+}
+
+tr:nth-child(even){
+	background-color: #ddd;
+}
+
+tr:hover td{
+	background-color: #00713ca9;
+	color: white;
+}
+
+/*Estilos de fondo*/
+@media(min-width:768px)
+{
+    .contenido_tabla{
+        margin: auto;
+        width: 890px;
+        margin-top: 150pz;
+		border-radius: 2%;
+		background: #fff;
+		margin-top: 50px;
+		padding: 3px;	
+    }
+}
